@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--
+通过 app:counterEnabled=”true” app:counterMaxLength=”3” 两句限制了最大字符长度
+app:counterOverflowTextAppearance 可输入字符数量Text溢出外观
+设置app:errorEnabled属性为true的情况，是否有错误提示
+app:errorTextAppearance 设置错误提示的文字样式
+app:hintTextAppearance 设置提示性文字的样式
+-->
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/InputLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="3"
+        app:counterOverflowTextAppearance="@style/MyOverflowText"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/MyErrorText"
+        app:hintTextAppearance="@style/MyHintText"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/inputEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入账户"
+            android:theme="@style/Theme.AppCompat.Light" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--
+app:passwordToggleEnabled 是否显示后面的提示图片
+app:passwordToggleTint 给后面的提示图片设置颜色
+-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutPassword"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorPrimary"
+        android:layout_width="406dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="236dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:theme="@style/Theme.TextInputLayout" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="416dp"
+        android:text="登录"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
