@@ -5,6 +5,7 @@ TabLayout2 顶部导航
 CardView 卡片按钮组件
 Scrolling ationbar可下滑显示或者隐藏
 TextInputLayout Material样式的输入框
+SearchView 搜索框
 
 
 
