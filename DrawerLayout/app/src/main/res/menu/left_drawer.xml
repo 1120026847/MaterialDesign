@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:title="只因"
+            android:id="@+id/zhiyin"
+         android:icon="@drawable/a">
+
+        </item>
+        <item
+        android:title="你"
+        android:id="@+id/ni"
+        android:icon="@drawable/b">
+
+    </item>
+        <item
+            android:title="太"
+            android:id="@+id/tai"
+            android:icon="@drawable/c">
+
+        </item>
+        <item
+            android:title="美"
+            android:id="@+id/mei"
+            android:icon="@drawable/d">
+        </item>
+    </group>
+    <group >
+    <item
+        android:title="唱"
+        android:id="@+id/chang"
+        android:icon="@drawable/e">
+
+    </item>
+    <item
+        android:title="跳"
+        android:id="@+id/tiao"
+        android:icon="@drawable/f">
+
+    </item>
+    <item
+        android:title="rap"
+        android:id="@+id/rap"
+        android:icon="@drawable/g">
+
+    </item>
+    <item
+        android:title="篮球"
+        android:id="@+id/lanqiu"
+        android:icon="@drawable/h">
+    </item>
+</group>
+</menu>
